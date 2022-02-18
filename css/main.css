@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.header {
+  width: 100%;
+  height: 90vh;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #461220;
+  background-image: linear-gradient(315deg, #461220 0%, #e0d4ae 74%); }
+  .header__photo {
+    width: 24rem;
+    height: 24rem; }
+
+.gradient-text {
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #380036 0%, #0cbaba 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }

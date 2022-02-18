@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpsinghcodes/Portfolio-2.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpsinghcodes/Portfolio-2.0/issues"
+  },
+  "homepage": "https://github.com/rpsinghcodes/Portfolio-2.0#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
