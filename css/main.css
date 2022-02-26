@@ -105,16 +105,22 @@ order: base +  typography > general layout + grid > page layout > components
 
 .header {
   width: 100%;
-  height: 90vh;
+  padding: 10rem;
   font-size: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-image: linear-gradient(315deg, #461220 0%, #e0d4ae 74%); }
   .header__photo {
-    width: 24rem;
-    height: 24rem; }
+    width: 40rem;
+    height: 40rem; }
+  @media (max-width: 37.5em) {
+    .header {
+      padding: 4rem;
+      font-size: 2rem; }
+      .header__photo {
+        width: 20rem;
+        height: 20rem; } }
 
 .gradient-text {
   background-color: #0cbaba;
@@ -122,20 +128,14 @@ order: base +  typography > general layout + grid > page layout > components
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-@media (max-width: 37.5em) {
-  .header {
-    font-size: 5rem; }
-    .header__photo {
-      width: 35rem;
-      height: 35rem; } }
-
 .aboutme {
   padding: 2rem;
   background-image: linear-gradient(315deg, #e0d4ae 0%, #461220 74%); }
   .aboutme h1 {
     text-align: center;
     font-size: 4rem;
-    padding: 4rem 0; }
+    padding: 4rem 0;
+    color: grey; }
   .aboutme__box {
     box-shadow: -10px 10px 24px -4px rgba(0, 0, 0, 0.75);
     background: transparent;
@@ -146,8 +146,11 @@ order: base +  typography > general layout + grid > page layout > components
     font-size: 2.2rem; }
     @media (max-width: 37.5em) {
       .aboutme__box {
-        width: 80%;
-        font-size: 2.4rem; } }
+        padding: 2rem 1rem;
+        width: 95%;
+        font-size: 1.4rem;
+        color: #faf0e6;
+        line-height: 2; } }
   .aboutme__skills {
     box-shadow: -10px 10px 24px -4px rgba(0, 0, 0, 0.75);
     background: transparent;
@@ -157,9 +160,6 @@ order: base +  typography > general layout + grid > page layout > components
     border-radius: 5px;
     font-size: 2.2rem;
     color: grey; }
-    @media (max-width: 37.5em) {
-      .aboutme__skills {
-        width: 95%; } }
     .aboutme__skills p {
       padding: 0 2rem; }
     .aboutme__skills .html,
@@ -176,6 +176,10 @@ order: base +  typography > general layout + grid > page layout > components
       border-radius: 2rem;
       margin-bottom: 2rem;
       overflow: hidden; }
+    @media (max-width: 37.5em) {
+      .aboutme__skills {
+        padding: 0.8rem;
+        width: 95%; } }
 
 .bar {
   height: 100%;
@@ -218,8 +222,11 @@ order: base +  typography > general layout + grid > page layout > components
     text-align: center; }
   .projects__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 10rem));
     grid-gap: 6rem 1.8rem; }
+    @media (max-width: 37.5em) {
+      .projects__container {
+        grid-gap: 6rem 0; } }
 
 .contact {
   text-align: center;
@@ -236,3 +243,15 @@ order: base +  typography > general layout + grid > page layout > components
     box-shadow: 9px 10px 22px 0px rgba(0, 0, 0, 0.75);
     padding: 1rem;
     margin: 1.5rem; }
+  @media (max-width: 37.5em) {
+    .contact {
+      font-size: 2rem;
+      color: grey;
+      padding: 1rem; }
+      .contact .social-handles {
+        padding: 2rem; }
+      .contact .icon {
+        padding: 0.2rem;
+        width: 5rem;
+        height: 5rem;
+        text-align: center; } }
