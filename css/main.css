@@ -6,6 +6,17 @@
 html {
   font-size: 62.5%; }
 
+/*
+0 - 600 -> phone
+600 - 900 -> tablets 
+900 - 1200 -> tablet landscape
+1200 - 1800 -> normal style
+1800+ -> big desktop
+1em = 16rem
+
+order: base +  typography > general layout + grid > page layout > components
+
+*/
 .card {
   box-shadow: 7px 10px 23px -3px rgba(0, 0, 0, 0.75); }
   .card__img {
@@ -100,7 +111,6 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #461220;
   background-image: linear-gradient(315deg, #461220 0%, #e0d4ae 74%); }
   .header__photo {
     width: 24rem;
@@ -111,6 +121,13 @@ html {
   background-image: linear-gradient(315deg, #380036 0%, #0cbaba 74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+@media (max-width: 37.5em) {
+  .header {
+    font-size: 5rem; }
+    .header__photo {
+      width: 35rem;
+      height: 35rem; } }
 
 .aboutme {
   padding: 2rem;
@@ -127,6 +144,10 @@ html {
     padding: 2rem;
     border-radius: 5px;
     font-size: 2.2rem; }
+    @media (max-width: 37.5em) {
+      .aboutme__box {
+        width: 80%;
+        font-size: 2.4rem; } }
   .aboutme__skills {
     box-shadow: -10px 10px 24px -4px rgba(0, 0, 0, 0.75);
     background: transparent;
@@ -136,6 +157,9 @@ html {
     border-radius: 5px;
     font-size: 2.2rem;
     color: grey; }
+    @media (max-width: 37.5em) {
+      .aboutme__skills {
+        width: 95%; } }
     .aboutme__skills p {
       padding: 0 2rem; }
     .aboutme__skills .html,
@@ -199,7 +223,6 @@ html {
 
 .contact {
   text-align: center;
-  height: 50vh;
   font-size: 4rem;
   background: linear-gradient(315deg, #e0d4ae 0%, #461220 74%);
   padding: 2rem; }
