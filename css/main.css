@@ -159,7 +159,7 @@ order: base +  typography > general layout + grid > page layout > components
     padding: 2rem;
     border-radius: 5px;
     font-size: 2.2rem;
-    color: grey; }
+    color: whitesmoke; }
     .aboutme__skills p {
       padding: 0 2rem; }
     .aboutme__skills .html,
